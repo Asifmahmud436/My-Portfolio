@@ -13,7 +13,13 @@ nav{
     align-items: center;
     border-bottom: 1px solid gray;
     max-height: 40px;
-    position: sticky;
+    /* position: sticky; */
+    /* position: fixed;  */
+    /* top: 0;          Keeps the navbar at the top */
+    width: 100%;     /* Ensures the navbar stretches across the screen */
+    background-color: black; /* Set a background color to prevent content from showing through */
+    /* z-index: 1000; */
+    margin-bottom: 20px;
 }
 nav h1,ul{
     font-weight: 300;
@@ -33,11 +39,15 @@ nav li{
     display: flex;
     align-items: center;
 }
-nav li>a:visited{
+a:visited{
     color: white;
 }
-nav li>a{
+a{
+    color: white;
     text-decoration: none;
+}
+a:hover{
+    color: #ccc;
 }
 /* banner */
 /* Keyframes for sliding in from left and right */
@@ -85,7 +95,7 @@ nav li>a{
 }
 
 .banner h1 {
-    font-size: 8rem;
+    font-size: 9rem;
     color: white;
     margin: 0;
 }
@@ -112,8 +122,8 @@ nav li>a{
     position: absolute;
     z-index: 2;
     text-align: right;
-    right: 0px;
-    bottom: 0px;
+    right: -20px;
+    bottom: -80px;
     animation: slideInRight 2.2s ease forwards;
     /* color: #ff8fab; */
 }
@@ -143,7 +153,17 @@ nav li>a{
 @media screen and (max-width:576px){
     nav li{
         border-right: 0px solid gray;
+        text-align: center;
     }
+    nav p{
+        /* border-right: 0px solid gray; */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* display: none; */
+    }
+    
     .banner h1 {
         font-size: 3rem;
         color: white;
