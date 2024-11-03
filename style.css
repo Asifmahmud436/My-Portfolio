@@ -14,11 +14,11 @@ nav{
     border-bottom: 1px solid gray;
     max-height: 40px;
     /* position: sticky; */
-    /* position: fixed;  */
+    position: fixed; 
     /* top: 0;          Keeps the navbar at the top */
     width: 100%;     /* Ensures the navbar stretches across the screen */
     background-color: black; /* Set a background color to prevent content from showing through */
-    /* z-index: 1000; */
+    z-index: 1000;
     margin-bottom: 20px;
 }
 nav h1,ul{
@@ -55,10 +55,12 @@ a:hover{
     0% {
         transform: translateX(-100%);
         opacity: 0;
+        /* font-weight: 400; */
     }
     100% {
         transform: translateX(0);
         opacity: 1;
+        /* font-weight: 400; */
         /* color: #ff8fab; */
     }
 }
@@ -67,11 +69,13 @@ a:hover{
     0% {
         transform: translateX(100%);
         opacity: 0;
+        /* font-weight: 400; */
     }
     100% {
         transform: translateX(0);
         opacity: 1;
         color: #ff8fab;
+        /* font-weight: 500; */
     }
 }
 @keyframes emerge {
@@ -81,7 +85,7 @@ a:hover{
     }
     100% {
         /* transform: translateX(0); */
-        opacity: 1;
+        opacity: .7;
         /* color: #ff8fab; */
     }
 }
@@ -91,6 +95,7 @@ a:hover{
     align-items: center;
     margin: 0 auto;
     max-width: 1044px;
+    padding-top: 50px;
     position: relative;
 }
 
@@ -163,7 +168,12 @@ a:hover{
         align-items: center;
         /* display: none; */
     }
-    
+    .banner,.introduction{
+        padding-top: 20px;
+    }
+    .introduction{
+        padding: 20px;
+    }
     .banner h1 {
         font-size: 3rem;
         color: white;
@@ -174,6 +184,7 @@ a:hover{
     .banner > img {
         max-height: 200px; 
         max-width: 100%;
+        margin-top: 20px;
         z-index: 2;
         right: 110px;
         /* left: 10px; */
@@ -187,14 +198,14 @@ a:hover{
         z-index: 2;
         text-align: right;
         right: 105px;
-        bottom: -250px;
+        bottom: -280px;
         animation: none;
     }
     .banner > .design {
         position: absolute;
         z-index: 1;
         text-align: left;
-        bottom:-80px;
+        bottom:-85px;
         right: 170px;
         color: #ff8fab;
         /* bottom: -120px; */
