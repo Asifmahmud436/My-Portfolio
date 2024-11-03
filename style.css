@@ -29,11 +29,8 @@ nav li{
     border-right:1px solid gray ;
     padding-right: 20px;
     padding-left: 20px;
-    /* padding-left: 40px; */
-    /* margin-right: 20px; */
     height: 40px;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
 }
 nav li>a:visited{
@@ -42,7 +39,151 @@ nav li>a:visited{
 nav li>a{
     text-decoration: none;
 }
+/* banner */
+/* Keyframes for sliding in from left and right */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        /* color: #ff8fab; */
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        color: #ff8fab;
+    }
+}
+@keyframes emerge {
+    0% {
+        /* transform: translateX(100%); */
+        opacity: 0;
+    }
+    100% {
+        /* transform: translateX(0); */
+        opacity: 1;
+        /* color: #ff8fab; */
+    }
+}
+.banner,.introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1044px;
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 8rem;
+    color: white;
+    margin: 0;
+}
+
+.banner > .design {
+    /* position: absolute; */
+    z-index: 1;
+    text-align: left;
+    animation: slideInLeft 2.2s ease forwards;
+    
+}
+
+.banner > img {
+    max-height: 400px; 
+    max-width: 100%;
+    z-index: 2;
+    right: 400px;
+    top: 50px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.banner > .industry {
+    position: absolute;
+    z-index: 2;
+    text-align: right;
+    right: 0px;
+    bottom: 0px;
+    animation: slideInRight 2.2s ease forwards;
+    /* color: #ff8fab; */
+}
+
+/* @media screen and (max-width:576px) {
+    nav li {
+        border-right: 0px solid gray;
+    }
+    .banner {
+        flex-direction: column;
+    }
+    .banner h1 {
+        font-size: 3rem;
+    }
+    .banner img {
+        max-height: 150px; 
+    }
+} */
+.introduction>h3{
+    margin-top: 90px;
+    /* font-weight: lighter; */
+    opacity: .7;
+    font-weight: 300;
+    animation: emerge 2.2s ease forwards;
+}
 
 @media screen and (max-width:576px){
+    nav li{
+        border-right: 0px solid gray;
+    }
+    .banner h1 {
+        font-size: 3rem;
+        color: white;
+        margin: 0;
+    }
+    
+    
+    .banner > img {
+        max-height: 200px; 
+        max-width: 100%;
+        z-index: 2;
+        right: 110px;
+        /* left: 10px; */
+        top: 50px;
+        position: absolute;
+        border-radius: 50%;
+    }
+    
+    .banner > .industry {
+        position: absolute;
+        z-index: 2;
+        text-align: right;
+        right: 105px;
+        bottom: -250px;
+        animation: none;
+    }
+    .banner > .design {
+        position: absolute;
+        z-index: 1;
+        text-align: left;
+        bottom:-80px;
+        right: 170px;
+        color: #ff8fab;
+        /* bottom: -120px; */
+    }
+    .introduction{
+        margin-top: 190px;
+        text-align: center;
+        opacity: .7;
+        font-weight: 300;
+    }
     
 }
