@@ -1,0 +1,27 @@
+.project-description{
+    max-width: 1044px;
+    margin: 0 auto;
+    /* border: 2px solid greenyellow; */
+    padding: 40px;
+    box-shadow: 0 0 18px greenyellow;
+    border-radius: 4px;
+}
+
+.project-wide-img img{
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 4px;
+}
+.tech-section{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+}
+.tech-section>h3{
+    font-weight: 600;
+    color: greenyellow;
+}
+.tech-section>p{
+    /* font-weight: 300; */
+    text-align: end;
+}

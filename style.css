@@ -205,9 +205,9 @@ a:hover{
     font-size: 4rem;
 }
 .project-content>p{
-    font-size: 1.3rem;
-    color: white;
-    opacity: 0.6;
+    font-size: 1.5rem;
+    color: greenyellow;
+    /* opacity: 0.6; */
 }
 .project-img{
     display: flex;
@@ -217,6 +217,7 @@ a:hover{
 .project-1 img,.project-2 img{
     height: 500px;
     width: 500px;
+    border-radius: 2px;
     transition: transform .8s ease;
 }
 .project-1>ul,.project-2>ul{
