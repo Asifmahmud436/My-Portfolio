@@ -360,6 +360,7 @@ a:hover{
     .project-content>p{
         opacity: .4;
         padding-top: 20px;
+        padding-bottom: 40px;
         margin: 0 auto;
         text-align: center;
         font-size: .9rem;
@@ -383,5 +384,8 @@ a:hover{
     }
     .contact-form textarea{
         padding: 16px 18px;
+    }
+    .contact button{
+        margin-left: 20px;
     }
 }
