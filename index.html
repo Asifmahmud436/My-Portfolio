@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a564f7c993.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
@@ -13,7 +14,7 @@
             <p><a href="#banner">Asif Mahmud</a></p>
             <ul>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Contact Me</a></li>
+                <li><a href="#contact">Contact Me</a></li>
                 <li><a href="Asif Mahmud.pdf" download="Asif_Mahmud.pdf">Download Resume</a></li>
                 <!-- <li>Contact Me</li> -->
             </ul>
@@ -29,7 +30,7 @@
         <section class="introduction">
             <h3>I'm a Backend Engineer and a student at BRAC University with a passion for leveraging technology to tackle complex, real-world challenges. My focus is on building efficient and scalable solutions that make everyday life easier. Through my studies and projects, I aim to deepen my technical skills and contribute meaningfully to the field.</h3>
         </section> 
-        <section class="skills" id="projects">
+        <section class="skills">
             <div class="tech-skills"  data-aos="zoom-out">
                 <h3>Tech Skills</h3>
                 <div class="skill-btn">
@@ -63,13 +64,13 @@
             </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="project-content">
                 <h1 data-aos="fade-up"><span >SELECTED</span>
                     <br>
                     <span >WORKS</span>
                 </h1>
-                <p data-aos="fade-down">Gorgeous Design, Fast Functionality, and User-Centric Experience. Built with modern technologies like Django to ensure scalability and responsiveness.</p>
+                <p >Gorgeous Design, Fast Functionality, and User-Centric Experience. Built with modern technologies like Django to ensure scalability and responsiveness.</p>
             </div>
             <div class="project-img">
                 <div class="project-1" data-aos="fade-up">
@@ -88,6 +89,33 @@
                         <li>[02]</li>
                     </ul>
                 </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="contact-details">
+                <h1 data-aos="fade-up">Connect With Me</h1>
+                <p>Whatsapp: +8801317482129</p>
+                <p>Gmail: safaandsafa4@gmail.com</p>
+                <div class="icons" data-aos="fade-up">
+                    <a href="https://www.linkedin.com/in/asif-mahmud-3bb1a627a/" target="_blank" aria-label="Linkedin Profile" ><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100027762020044" target="_blank" aria-label="Facebook Profile"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/Asifmahmud436" target="_blank" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-form" data-aos="fade-up">
+                <form action="/submit-contact-form" method="POST">
+                    <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </div>
+            
+                    <div>
+                    <label for="email-body">Message:</label>
+                    <textarea name="email-body" id="email-body" cols="22" rows="10" placeholder="Type your message here..." required></textarea>
+                    </div>
+            
+                    <button type="submit">Send Message</button>
+                </form>
             </div>
         </section>
     </main>
