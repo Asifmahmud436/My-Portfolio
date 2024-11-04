@@ -13,11 +13,9 @@ nav{
     align-items: center;
     border-bottom: 1px solid gray;
     max-height: 40px;
-    /* position: sticky; */
-    position: fixed; 
-    /* top: 0;          Keeps the navbar at the top */
-    width: 100%;     /* Ensures the navbar stretches across the screen */
-    background-color: black; /* Set a background color to prevent content from showing through */
+    position: fixed;   
+    width: 100%;    
+    background-color: black; 
     z-index: 1000;
     margin-bottom: 20px;
 }
@@ -28,7 +26,6 @@ nav ul{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    /* gap: 40px; */
 }
 nav li{
     border-left:1px solid gray ;
@@ -50,18 +47,14 @@ a:hover{
     color: #ccc;
 }
 /* banner */
-/* Keyframes for sliding in from left and right */
 @keyframes slideInLeft {
     0% {
         transform: translateX(-100%);
         opacity: 0;
-        /* font-weight: 400; */
     }
     100% {
         transform: translateX(0);
         opacity: 1;
-        /* font-weight: 400; */
-        /* color: #ff8fab; */
     }
 }
 
@@ -69,24 +62,19 @@ a:hover{
     0% {
         transform: translateX(100%);
         opacity: 0;
-        /* font-weight: 400; */
     }
     100% {
         transform: translateX(0);
         opacity: 1;
         color: #ff8fab;
-        /* font-weight: 500; */
     }
 }
 @keyframes emerge {
     0% {
-        /* transform: translateX(100%); */
         opacity: 0;
     }
     100% {
-        /* transform: translateX(0); */
         opacity: .7;
-        /* color: #ff8fab; */
     }
 }
 .banner,.introduction {
@@ -106,7 +94,6 @@ a:hover{
 }
 
 .banner > .design {
-    /* position: absolute; */
     z-index: 1;
     text-align: left;
     animation: slideInLeft 2.2s ease forwards;
@@ -130,29 +117,57 @@ a:hover{
     right: -20px;
     bottom: -80px;
     animation: slideInRight 2.2s ease forwards;
-    /* color: #ff8fab; */
 }
 
-/* @media screen and (max-width:576px) {
-    nav li {
-        border-right: 0px solid gray;
-    }
-    .banner {
-        flex-direction: column;
-    }
-    .banner h1 {
-        font-size: 3rem;
-    }
-    .banner img {
-        max-height: 150px; 
-    }
-} */
 .introduction>h3{
     margin-top: 90px;
-    /* font-weight: lighter; */
     opacity: .7;
     font-weight: 300;
     animation: emerge 2.2s ease forwards;
+}
+
+/* skills */
+.skills{
+    max-width: 1044px;
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tech-skills,.soft-skills{
+    max-width: 300px;
+    border: .7px solid #ccc;
+    border-radius: 18px;
+    padding: 20px;
+    background-color: #3d2d1d;
+    /* color: black; */
+    /* text-align: center; */
+    background-color: #222222; /* Adjust the color code as needed */
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    box-shadow: 4px 4px 8px gray;
+}
+.tech-skills>h3,.soft-skills>h3{
+    text-align: center;
+    font-size: 2rem;
+}
+.tech-skills>.skill-btn{
+    margin-top: 50px;
+    /* display: flex; */
+    /* text-align: center; */
+}
+.skill-btn button{
+    font-weight: 900;
+    font-size: .7rem;
+    margin: 5px;
+    padding: 12px 16px;
+    border-radius: 18px;
+    border: none;
+}
+.soft-skills li{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10px;
+    /* list-style: none; */
 }
 
 @media screen and (max-width:576px){
@@ -161,12 +176,10 @@ a:hover{
         text-align: center;
     }
     nav p{
-        /* border-right: 0px solid gray; */
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        /* display: none; */
     }
     .banner,.introduction{
         padding-top: 20px;
@@ -187,7 +200,6 @@ a:hover{
         margin-top: 20px;
         z-index: 2;
         right: 110px;
-        /* left: 10px; */
         top: 50px;
         position: absolute;
         border-radius: 50%;
@@ -208,7 +220,6 @@ a:hover{
         bottom:-85px;
         right: 170px;
         color: #ff8fab;
-        /* bottom: -120px; */
     }
     .introduction{
         margin-top: 190px;
@@ -216,5 +227,14 @@ a:hover{
         opacity: .7;
         font-weight: 300;
     }
+    /* skills */
+    .skills{
+        flex-direction: column;
+        margin: 50px auto;
+    }
+    .tech-skills,.soft-skills{
+        margin: 20px auto;
+    }
+    
     
 }
