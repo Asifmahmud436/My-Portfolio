@@ -77,8 +77,6 @@ a:hover{
     }
     100% {
         transform: translateY(0);
-        /* opacity: 1; */
-        /* color: #ff8fab; */
         opacity: .7;
     }
 }
@@ -154,11 +152,8 @@ a:hover{
     max-width: 300px;
     border: .7px solid #ccc;
     border-radius: 18px;
-    /* padding: 20px; */
     background-color: #3d2d1d;
-    /* color: black; */
-    /* text-align: center; */
-    background-color: #222222; /* Adjust the color code as needed */
+    background-color: #222222;
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
     box-shadow: 4px 4px 8px gray;
 }
@@ -168,8 +163,6 @@ a:hover{
 }
 .tech-skills>.skill-btn{
     margin-top: 50px;
-    /* display: flex; */
-    /* text-align: center; */
 }
 .skill-btn button{
     font-weight: 900;
@@ -183,7 +176,6 @@ a:hover{
     font-size: 1rem;
     font-weight: 400;
     padding: 10px;
-    /* list-style: none; */
 }
 /* project */
 
@@ -191,11 +183,9 @@ a:hover{
 .project-content {
     display: flex;
     justify-content: space-between; 
-    /* align-items: flex-start; */
     align-items: center;
     width: 100%; 
     margin: 0; 
-    /* padding: 20px;  */
 }
 
 .project-content h1, .project-content p {
@@ -208,7 +198,6 @@ a:hover{
 .project-content>p{
     font-size: 1.5rem;
     color: greenyellow;
-    /* opacity: 0.6; */
 }
 .project-img{
     display: flex;
@@ -240,20 +229,15 @@ a:hover{
 /* contact */
 .contact{
     display: flex;
-    /* display: ; */
     justify-content: space-between;
     align-items: flex-start;
 }
-/* .contact i{
-    width: 200px;
-    height: 200px;
-} */
+
 .contact h1{
     font-size: 3rem;
 }
 .contact a{
     font-size: 3rem;
-    /* gap: 10px; */
     padding-right: 20px;
 }
 .contact-form{
@@ -310,13 +294,10 @@ a:hover{
 @media screen and (max-width:576px){
     nav{
         justify-content: space-evenly;
-        /* display: none; */
-        /* flex-direction: column; */
     }
     nav li{
         border-right: 0px solid gray;
         text-align: center;
-        /* padding: 5px; */
         font-size: .7rem;
     }
     nav p{
@@ -350,7 +331,6 @@ a:hover{
         top: 50px;
         position: absolute;
         border-radius: 50%;
-        /* display: none; */
     }
     
     .banner > .industry {
@@ -360,7 +340,6 @@ a:hover{
         right: 95px;
         bottom: -280px;
         animation: none;
-        /* display: none; */
     }
     .banner > .design {
         position: absolute;
@@ -369,7 +348,6 @@ a:hover{
         bottom:-85px;
         right: 155px;
         color: #ff8fab;
-        /* display: none; */
     }
     .introduction{
         margin-top: 190px;
@@ -388,7 +366,6 @@ a:hover{
     .projects{
         margin: 0 auto;
         text-align: center;
-        /* border: 1px solid red; */
     }
     .project-content{
         text-align: center;
@@ -406,7 +383,6 @@ a:hover{
     .project-img{
         flex-direction: column;
         margin: 0 auto;
-        /* border: 2px solid red; */
     }
     .project-1 img,.project-2 img{
         height: 300px;
@@ -430,25 +406,21 @@ a:hover{
         flex-direction: column;
         align-items: center; 
         text-align: center; 
-        /* display: none; */
     }
-    /* .about-me img{
-        width: 96%;
-    } */
-    /* .about-me .img-section{
-        border: 1px solid red;
-    } */
+    
     .about-me .self-bragging{
-        /* border: 1px solid red; */
         margin: 0 auto;
     }
-    /* .introduction{
-        border: 1px solid red;
-    }
-    .banner{
-        border: 1px solid red;
-    }
-    .banner img{
-        border: 1px solid red;
-    } */
+}
+
+.circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    background-color: rgba(0, 0, 0, .7);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
 }
