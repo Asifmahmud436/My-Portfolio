@@ -22,6 +22,17 @@
     color: greenyellow;
 }
 .tech-section>p{
-    /* font-weight: 300; */
     text-align: end;
+}
+body{
+    cursor: default;
+}
+.overview-section{
+    flex-direction: column;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.overview-section>p{
+    text-align: center;
 }

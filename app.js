@@ -3,7 +3,7 @@ document.addEventListener('mousemove', (event) => {
     if (circle) {
         circle.style.left = `${event.pageX}px`;
         circle.style.top = `${event.pageY}px`;
-        console.log("Mouse moved:", event.pageX, event.pageY); // Debugging line
+        console.log("Mouse moved:", event.pageX, event.pageY); 
     } else {
         console.error("Circle element not found.");
     }
